@@ -1,7 +1,6 @@
-import java.util.Arrays;
 import java.util.stream.IntStream;
 class Solution {
     public int solution(int n) {
-       return Arrays.stream(IntStream.rangeClosed(1,n).filter(i->n%i==0).toArray()).sum();
+       return IntStream.rangeClosed(1,n).filter(i->n%i==0).sum();
     }
 }
