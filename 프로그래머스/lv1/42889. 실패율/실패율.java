@@ -19,14 +19,14 @@ class Solution {
                 list.add(clearCnt / totCnt);
             }
         }
-        int rank = 1;
+        
 
         for (int i = 0; i < N; i++) {
             double max = Collections.max(list);
             for (int j = 0; j <N ; j++) {
                 if(list.get(j)==max){
                     answer[i] = j+1;
-                    rank++;
+        
                     list.set(j,-1.0);
                     break;
                 }
